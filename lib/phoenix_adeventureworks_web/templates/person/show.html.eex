@@ -1,0 +1,8 @@
+<h1>Show Person</h1>
+
+<ul>
+  <%= "#{@person.firstname} #{@person.lastname}" %>
+</ul>
+
+<span><%= link "Edit", to: Routes.person_path(@conn, :edit, @person) %></span>
+<span><%= link "Back", to: Routes.person_path(@conn, :index) %></span>
