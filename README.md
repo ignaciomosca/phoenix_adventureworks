@@ -1,4 +1,4 @@
-# PhoenixAdeventureworks
+# PhoenixAdventureworks
 
 To start your Phoenix server:
 

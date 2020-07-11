@@ -5,16 +5,16 @@ use Mix.Config
 # The MIX_TEST_PARTITION environment variable can be used
 # to provide built-in test partitioning in CI environment.
 # Run `mix help test` for more information.
-config :phoenix_adeventureworks, PhoenixAdeventureworks.Repo,
+config :phoenix_adventureworks, PhoenixAdventureworks.Repo,
   username: "postgres",
   password: "postgres",
-  database: "phoenix_adeventureworks_test#{System.get_env("MIX_TEST_PARTITION")}",
+  database: "phoenix_adventureworks_test#{System.get_env("MIX_TEST_PARTITION")}",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
 
 # We don't run a server during test. If one is required,
 # you can enable the server option below.
-config :phoenix_adeventureworks, PhoenixAdeventureworksWeb.Endpoint,
+config :phoenix_adventureworks, PhoenixAdventureworksWeb.Endpoint,
   http: [port: 4002],
   server: false
 

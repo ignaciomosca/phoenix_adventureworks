@@ -1,9 +1,9 @@
-defmodule PhoenixAdeventureworks.MixProject do
+defmodule PhoenixAdventureworks.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :phoenix_adeventureworks,
+      app: :phoenix_adventureworks,
       version: "0.1.0",
       elixir: "~> 1.7",
       elixirc_paths: elixirc_paths(Mix.env()),
@@ -19,7 +19,7 @@ defmodule PhoenixAdeventureworks.MixProject do
   # Type `mix help compile.app` for more information.
   def application do
     [
-      mod: {PhoenixAdeventureworks.Application, []},
+      mod: {PhoenixAdventureworks.Application, []},
       extra_applications: [:logger, :runtime_tools]
     ]
   end

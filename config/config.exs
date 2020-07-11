@@ -7,15 +7,15 @@
 # General application configuration
 use Mix.Config
 
-config :phoenix_adeventureworks,
-  ecto_repos: [PhoenixAdeventureworks.Repo]
+config :phoenix_adventureworks,
+  ecto_repos: [PhoenixAdventureworks.Repo]
 
 # Configures the endpoint
-config :phoenix_adeventureworks, PhoenixAdeventureworksWeb.Endpoint,
+config :phoenix_adventureworks, PhoenixAdventureworksWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "8FuNMLuUbGZxkn56wLdekwPtHr9SZUzs//MEqZZ6me8Fejv/1XI82g/iPA6bcHpD",
-  render_errors: [view: PhoenixAdeventureworksWeb.ErrorView, accepts: ~w(html json), layout: false],
-  pubsub_server: PhoenixAdeventureworks.PubSub,
+  render_errors: [view: PhoenixAdventureworksWeb.ErrorView, accepts: ~w(html json), layout: false],
+  pubsub_server: PhoenixAdventureworks.PubSub,
   live_view: [signing_salt: "dqKQe74d"]
 
 # Configures Elixir's Logger

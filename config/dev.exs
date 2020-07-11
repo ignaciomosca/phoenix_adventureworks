@@ -4,7 +4,7 @@ config :logger, level: :info
 
 
 # Configure your database
-config :phoenix_adeventureworks, PhoenixAdeventureworks.Repo,
+config :phoenix_adventureworks, PhoenixAdventureworks.Repo,
   username: "postgres",
   password: "postgres",
   database: "Adventureworks",
@@ -18,7 +18,7 @@ config :phoenix_adeventureworks, PhoenixAdeventureworks.Repo,
 # The watchers configuration can be used to run external
 # watchers to your application. For example, we use it
 # with webpack to recompile .js and .css sources.
-config :phoenix_adeventureworks, PhoenixAdeventureworksWeb.Endpoint,
+config :phoenix_adventureworks, PhoenixAdventureworksWeb.Endpoint,
   http: [port: 4000],
   debug_errors: true,
   code_reloader: true,
@@ -58,13 +58,13 @@ config :phoenix_adeventureworks, PhoenixAdeventureworksWeb.Endpoint,
 # different ports.
 
 # Watch static and templates for browser reloading.
-config :phoenix_adeventureworks, PhoenixAdeventureworksWeb.Endpoint,
+config :phoenix_adventureworks, PhoenixAdventureworksWeb.Endpoint,
   live_reload: [
     patterns: [
       ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"priv/gettext/.*(po)$",
-      ~r"lib/phoenix_adeventureworks_web/(live|views)/.*(ex)$",
-      ~r"lib/phoenix_adeventureworks_web/templates/.*(eex)$"
+      ~r"lib/phoenix_adventureworks_web/(live|views)/.*(ex)$",
+      ~r"lib/phoenix_adventureworks_web/templates/.*(eex)$"
     ]
   ]
 
